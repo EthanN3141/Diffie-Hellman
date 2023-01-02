@@ -1,0 +1,34 @@
+BUGS:
+None are known as of 1/2/23
+
+PURPOSE:
+    Encrypts messages using Diffie-Hellman/Elgamal encryption. Messages can be 
+    transferred with a good degree of security. Of course, this scheme has been 
+    cracked, so don't use this to transfer sensitive information. Nonetheless, 
+    feel free to use this program to understand an early cryptographic scheme
+    and devise attacks on this scheme at your leisure.
+
+FILES:
+
+    Main.cpp: interfaces with the user and implements Diffie-Hellman encryption.
+
+    SecuredInfo.h: header file for SecuredInfo.cpp.
+
+    SecuredInfo.cpp: stores all the functions used in the encryption. Functions
+    include generating prime numbers, modular arithmetic, conversion between 
+    alphabetical text and base 10 integers, and a variety of functions that 
+    carry out the actual encryption.
+
+    Makefile: aids in linking all files above so that main can access the 
+    objects and methods in a SecuredInfo.
+
+PROGRAM RESTRICTIONS AND USE:
+    *** Enter in a message of up to 5 characters composed only of English
+    letters. Capital letters are allowed.
+    
+Future Improvements:
+    *** Messages of arbitrary length and content will be supported
+    *** Various attacks on the encryption will be implemented to illustrate the 
+    vulnerabilities of the Diffie-Hellman encryption.
+    *** Prime numbers will be tested deterministically in polynomial time with
+    the number of digits according to the contents of the paper "Primes is P."

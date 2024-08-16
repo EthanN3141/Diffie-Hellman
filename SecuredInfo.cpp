@@ -430,8 +430,6 @@ bool SecuredInfo::Rabin_Miller_Helper(long p) {
  * parameters: base (a), power (b), and modulus (m)
  * returns: (a^b)modm
  * O(log(ba)log(m)) time
- // without question, there is an error here. I just don't know what :(
- * apparently this can return a negative number?
  */
 long SecuredInfo::powerMod(long a, long b, long m) {
     long partialProduct = 1;
